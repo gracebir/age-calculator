@@ -1,0 +1,23 @@
+{
+  "name": "age-calculator",
+  "version": "1.0.0",
+  "description": "Age calculator",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gracebir/age-calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gracebir/age-calculator/issues"
+  },
+  "homepage": "https://github.com/gracebir/age-calculator#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
