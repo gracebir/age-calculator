@@ -7,8 +7,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
     <title>Age calculator</title>
 </head>
-<body>
-    <h2 class="text-3xl font-bold">age</h2>
+<body class="font-poppins h-screen w-full flex items-center bg-color-light-grey px-4 lg:px-0">
+    <div class="max-w-5xl bg-color-white mx-auto flex-1 rounded-bl-3xl rounded-tr-3xl rounded-tl-3xl rounded-br-3xl px-8 lg:px-12 py-8 flex flex-col gap-8 lg:gap-10">
+        <form class="flex flex-col items-center lg:flex-row lg:items-end">
+            <div class="grid lg:grid-cols-4 grid-cols-3 gap-4 max-w-4xl border-b lg:pb-10 pb-14">
+                <div class="flex flex-col gap-2 lg:gap-3">
+                    <label class="text-color-light-grey font-bold text-xl uppercase lg:text-2xl">day</label>
+                    <input id="iday" placeholder="DD" class="border w-full border-color-light-grey lg:text-3xl text-xl rounded-xl lg:px-2 lg:py-6 px-3 py-4 placeholder:text-color-light-grey outline-none" type="text">
+                </div>
+                <div class="flex flex-col gap-2 lg:gap-3">
+                    <label class="text-color-light-grey font-bold text-xl uppercase lg:text-2xl">month</label>
+                    <input id="imonth" placeholder="MM" class="border border-color-light-grey lg:text-3xl text-xl rounded-xl lg:px-2 lg:py-6 px-3 py-4 placeholder:text-color-light-grey outline-none" type="text">
+                </div>
+                <div class="flex flex-col gap-2 lg:gap-3">
+                    <label class="text-color-light-grey font-bold text-xl uppercase lg:text-2xl">year</label>
+                    <input id="iyear" placeholder="YY" class="border border-color-light-grey lg:text-3xl text-xl rounded-xl lg:px-2 lg:py-6 px-3 py-4 placeholder:text-color-light-grey outline-none" type="text">
+                </div>
+            </div>
+            <button class="bg-color-purple lg:p-12 p-6 rounded-full -mt-8 lg:-ml-4 lg:-mb-16">
+                <img class="lg:w-16 w-8" src="./images/icon-arrow.svg" alt="arrow">
+            </button>
+        </form>
+        <div>
+            <h1 class="text-4xl lg:text-9xl font-extrabold italic"><span id="ryear">--</span> years</h1>
+            <h1 class="text-4xl lg:text-9xl font-extrabold italic"><span id="rmonths">--</span> months</h1>
+            <h1 class="text-4xl lg:text-9xl font-extrabold italic"><span id="rdays">--</span> days</h1>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
