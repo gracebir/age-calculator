@@ -8,27 +8,30 @@
     <title>Age calculator</title>
 </head>
 <body class="font-poppins h-screen w-full flex items-center bg-color-light-grey px-4 lg:px-0">
-    <div class="max-w-5xl bg-color-white mx-auto flex-1 rounded-bl-3xl rounded-tr-3xl rounded-tl-3xl lg:rounded-br-[200px] rounded-br-[150px] px-8 lg:px-12 py-8 lg:py-10 flex flex-col gap-8 lg:gap-10">
-        <form class="flex flex-col items-center lg:flex-row lg:items-end">
+    <div class="max-w-5xl bg-color-white mx-auto flex-1 rounded-bl-3xl rounded-tr-3xl rounded-tl-3xl lg:rounded-br-[200px] rounded-br-[150px] px-8 shadow-lg lg:px-12 py-8 lg:py-10 flex flex-col gap-8 lg:gap-10">
+        <form id="form" class="flex flex-col items-center lg:flex-row lg:items-end">
             <div class="grid lg:grid-cols-4 grid-cols-3 gap-4 max-w-4xl border-b lg:pb-10 pb-14">
-                <div class="flex flex-col gap-2 lg:gap-3">
+                <div id="id1" class="flex flex-col gap-2 lg:gap-3">
                     <label class="text-color-smokey tracking-wide font-semibold text-xl uppercase lg:text-2xl">day</label>
                     <input id="iday" placeholder="DD" class="border w-full border-color-light-grey hover:border-color-purple lg:text-3xl text-xl rounded-xl lg:px-2 lg:py-6 px-3 py-4 placeholder:text-color-light-grey outline-none" type="text">
+                    <span id="errorDay" class="text-color-light-red italic text-xs lg:sm hidden">Must be a valid day</span>
                 </div>
-                <div class="flex flex-col gap-2 lg:gap-3">
+                <div id="id2" class="flex flex-col gap-2 lg:gap-3">
                     <label class="text-color-smokey tracking-wide font-semibold text-xl uppercase lg:text-2xl">month</label>
                     <input id="imonth" placeholder="MM" class="border border-color-light-grey hover:border-color-purple lg:text-3xl text-xl rounded-xl lg:px-2 lg:py-6 px-3 py-4 placeholder:text-color-light-grey outline-none" type="text">
+                    <span id="errorMonth" class="text-color-light-red italic text-xs lg:sm hidden">Must be a valid month</span>
                 </div>
-                <div class="flex flex-col gap-2 lg:gap-3">
+                <div id="id3" class="flex flex-col gap-2 lg:gap-3">
                     <label class="text-color-smokey tracking-wide font-semiboldtext-xl uppercase lg:text-2xl">year</label>
                     <input id="iyear" placeholder="YY" class="border border-color-light-grey hover:border-color-purple lg:text-3xl text-xl rounded-xl lg:px-2 lg:py-6 px-3 py-4 placeholder:text-color-light-grey outline-none" type="text">
+                    <span id="errorYear" class="text-color-light-red italic text-xs lg:sm hidden">Must be a valid year</span>
                 </div>
             </div>
             <button class="bg-color-purple hover:bg-color-off-black lg:p-12 p-6 rounded-full -mt-8 lg:-ml-4 lg:-mb-16">
                 <img class="lg:w-16 w-8" src="./images/icon-arrow.svg" alt="arrow">
             </button>
         </form>
-        <div>
+        <div id="result">
             <h1 class="text-5xl lg:text-9xl font-extrabold italic"><span class="text-color-purple" id="ryear">--</span> years</h1>
             <h1 class="text-5xl lg:text-9xl font-extrabold italic"><span class="text-color-purple" id="rmonths">--</span> months</h1>
             <h1 class="text-5xl lg:text-9xl font-extrabold italic"><span class="text-color-purple" id="rdays">--</span> days</h1>
