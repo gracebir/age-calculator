@@ -885,6 +885,10 @@ video {
   color: var(--color-light-grey);
 }
 
+.text-color-purple {
+  color: var(--color-purple);
+}
+
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
