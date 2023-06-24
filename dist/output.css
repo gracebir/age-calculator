@@ -902,6 +902,14 @@ video {
   color: var(--color-light-grey);
 }
 
+.hover\:border-color-purple:hover {
+  border-color: var(--color-purple);
+}
+
+.hover\:bg-color-off-black:hover {
+  background-color: var(--color-off-black);
+}
+
 @media (min-width: 1024px) {
   .lg\:-ml-3 {
     margin-left: -0.75rem;
