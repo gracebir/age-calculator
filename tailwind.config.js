@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const purge = provess.env.NODE_ENV === 'production' ? true : false
+const purge = process.env.NODE_ENV === 'production' ? true : false
 module.exports = {
   purge: {enabled: purge, content: ['./dist/**/*.html']},
   content: ["./src/**/*.{html,js}"],

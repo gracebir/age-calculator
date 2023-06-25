@@ -4,8 +4,7 @@
   "description": "Age calculator",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "build": "postcss src/inout.css -o dist/output.css"
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "repository": {
     "type": "git",
